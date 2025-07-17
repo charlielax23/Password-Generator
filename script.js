@@ -32,16 +32,12 @@ btn.onclick = function(){
         return
     }
 
-    else if(input > 30){
-        result.textContent = "The maximun is 30"
+    else if(input > 20){
+        result.textContent = "The maximun is 20"
         return
     }
-    else if(input <= 0){
+    else if(input < 1){
         result.textContent = "Enter Positive Number"
-        return
-    }
-    else if(isNaN(input)){
-        result.textContent = "Invalid. Try Again"
         return
     }
     else if(!uppercase.checked && !lowercase.checked && !symbols.checked && !numbers.checked){
